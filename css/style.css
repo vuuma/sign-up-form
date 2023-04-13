@@ -1,6 +1,8 @@
 * {
     border: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow:hidden
 }
 
 a {
@@ -10,6 +12,7 @@ a {
 body {
     display: flex;
     flex-direction: row;
+    
 }
 
 div.sidebar {
@@ -48,5 +51,56 @@ div .footer{
     padding: 10px 0;
 }
 
+.content-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+}
+
+.content-section > *, .sign-up-form{
+    padding-left: 2em;
+}
 
     
+div .content-section-header {
+    padding: 3em 2em;
+    background-color: rgb(247, 243, 243);
+    font-size: 30px;
+}
+
+input{
+    border: 2px solid #E5E7EB;
+    display: block;
+}
+
+div .content-section-form-header {
+    font-size: 30px;
+    padding: 1em 2em;
+}
+    
+.sign-up-form{
+    display:flex;
+    gap: 10em;
+    
+}
+
+.form-column-one > div {
+    padding-bottom: 1em;
+}
+
+.form-column-two > div {
+    padding-bottom: 1em;
+}
+
+.create-account{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    width: 300px;
+    border-radius: 4px;
+}
+
+.content-section-footer > p, button {
+    margin: 1em 0;
+}

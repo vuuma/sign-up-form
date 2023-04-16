@@ -97,10 +97,27 @@ div .content-section-form-header {
     color: white;
     font-size: 20px;
     height: 50px;
-    width: 300px;
+    min-width: 300px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
-.content-section-footer > p, button {
+.content-section-footer span{
     margin: 1em 0;
+    padding-left: 2em;
+}
+
+a {
+    display: inline;
+    color: rgba(59, 59, 59, 0.966);
+    text-decoration: none;
+}
+
+input:invalid {
+    border: 2px solid rgb(253, 102, 102);
+}
+
+.required-field::after {
+    color: red;
+    content: " *";
 }
